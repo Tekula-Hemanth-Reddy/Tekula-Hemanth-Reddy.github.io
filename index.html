@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+        <title>Hemanth Reddy Tekula</title>
+        <!-- Required meta tags -->
+
+        
+        <!-- FAV AND ICONS   -->
+        
+        <!-- Google Font-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+        <!-- Animate CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/animate.css">
+        <!-- Owl Carousel CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/owl.css">
+        <!-- Fancybox-->
+        <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!--Chat Box-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+    </head>
+    <body class="dark-vertion black-bg">
+        
+
+        <!--
+        ===================
+          Chat Box
+        ===================
+        -->
+        <!-- <div id="feedbackinvoke"  style= " display: block; position: fixed;bottom: 0;right: 15px;z-index: 9;max-width: 20%;">
+            <button type="button" title="Feedback" class="btn" style="background-color: rgb(38, 0, 128)" onclick="openForm() "><a herf="#FeedBackform">FeedBack</a></button>
+        </div>
+        
+        <div  id="FeedBackform"  style= "display: none; position: fixed;bottom: 0;right: 15px;z-index: 9; min-width: 80%;">
+            <div class="mh-blog-item dark-bg wow fadeInUp" style="border-radius: 20px; padding: 8px 30px;" >
+                <h5 align=right>
+                    <a onclick="closeForm();"><i class="fa  fa-times-circle"></i></a>
+                 </h5>
+                 <h5 align=left>
+                     FeedBack &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     
+                 </h5>
+                <div id="chating">
+                    <div align=left class="mh-promo wow fadeInUp"  >
+                        <p >Hi, Im open to any suggestions.</p>
+                        <a href="#mh-contact"><p align=left>To Contact Me Please visit the Contact Section</p></a>
+                    </div>
+                </div>
+                <input id="pagename" type="hidden" class="contact-name form-control" name="pagename" value="Portfolio">
+                <input id="FeedBackmsg" type="text" class="contact-name form-control" placeholder="Feedback" name="feedback" required autocomplete="off">
+                <div align=center >
+                    <button type="button" class="btn" style="background-color: green" onclick="sendForm()">Send</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <script>
+            function sendForm() 
+            {
+                var msg= document.getElementById("FeedBackmsg").value;
+                var pagename= document.getElementById("pagename").value;
+                //document.getElementById("FeedBackform").innerHTML='<button type="button" class="btn" style="background-color: rgb(38, 0, 128)" >ThankYou for the FeedBack</button>';
+                
+                var xhttp;
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("feedbackinvoke").innerHTML = this.responseText;
+                }
+                };
+                xhttp.open("GET", "https://teacherformkk.000webhostapp.com/feedback.php?pagename="+pagename+"&msg="+msg, true);
+                xhttp.send();
+                closeForm();
+
+            }
+            function openForm() 
+            {
+                document.getElementById("feedbackinvoke").style.display = "none";
+                document.getElementById("FeedBackform").style.display = "block";
+                
+            } -->
+
+            <!-- function closeForm() 
+            {
+                document.getElementById("feedbackinvoke").style.display = "block";
+                document.getElementById("FeedBackform").style.display = "none";
+            }
+        </script> -->
+
+        
+        <!--
+        ===================
+           NAVIGATION
+        ===================
+        -->
+        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#mh-home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-skills">Skills</a>
+                                </li>                                
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-experience">Education</a>
+                                </li>                                
+                           <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#mh-portfolio">Portfolio</a>
+                                </li>  -->                             
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My Blog</a>
+                                 </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <!--
+        ===================
+            HOME 
+        ===================
+        -->
+        <section class="mh-home" id="mh-home">
+            <div class="home-ovimg">
+                <div class="container">
+                    <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
+                        <div class="col-sm-6">
+                            <div class="mh-header-info">
+                                
+                                
+                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Hemanth Reddy</h2>
+                                <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Student</h4>
+                                
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:tekulahemanth@gmail.com">tekulahemanth@gmail.com</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="tel:+919381201545">+91 9381201545</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/hgRdNLQmi3XXR3uo6" target="blank" ><address>Chityal, Nalgonda dist, Telangana, India</address></a></li>
+                                </ul>
+                                
+                                <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                    <!-- <li><a href="https://www.linkedin.com/home/?originalSubdomain=in" target="blank"><i class="fa fa-linkedin-square"> </i></a></li> -->
+                                        <li><a href="https://github.com/Tekula-Hemanth-Reddy" target="blank"><i class="fa fa-github"> </i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/karthikkalitkar23" target="blank"><i class="fa fa-facebook"> </i></a></li> -->
+                                        <li><a href="https://www.instagram.com/tekulahemanth/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                
+                                <img src="assets/images/me.jpg" alt="" width="350mm" height="370mm"  >
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <!--
+        ==================
+            ABOUT
+        =================
+        -->
+        <section class="mh-about" id="mh-about">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                            <img src="assets/images/about.png"  class="img-fluid" >
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-inner">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
+                            <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">I'm a Computer Science Engineer. 
+                                I have rich experience in solving Problem Statements in C++ and Java.  I am also good at
+                            </p>
+                            <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                <ul>
+                                    <li><span>C</span></li>
+                                    <li><span>C++</span></li>
+                                    <li><span>Java</span></li>
+                                    <li><span>Python</span></li>
+                                    
+                                    <li><span>HTML</span></li>
+                                    <li><span>CSS</span></li>
+                                    <li><span>XML</span></li>
+                                    <li><span>Android Studio</span></li>
+                                </ul>
+                            </div>
+                            <!-- <a href="assets/images/Resume.pdf" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" target="Blank">Download CV <i class="fa fa-download"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           SKILLS
+        ===================
+        -->
+        <section class="mh-skills" id="mh-skills">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title text-center col-sm-12">
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">  
+                                <div class="each-skills">
+                                    <!--beginner C,java,css,scripting-->
+                                    <!--Intermediate  html, JS , C++ Ruby-->
+                                    <!--Advanced Python, php -->
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">C</div>
+                                                <div class="percentagem-num">Advanced</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">C++</div>
+                                                <div class="percentagem-num">Advanced</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">java</div>
+                                                <div class="percentagem-num">Advanced</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 75%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Python</div>
+                                                <div class="percentagem-num">Intermediate</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 60%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6"> 
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">  
+                                <div class="each-skills">
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">HTML</div>
+                                                <div class="percentagem-num">Advanced</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 75%;"></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">CSS</div>
+                                                <div class="percentagem-num">Intermediate</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 60%;"></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">XML</div>
+                                                <div class="percentagem-num">Advanced</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 85%;"></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Android Studio</div>
+                                                <div class="percentagem-num">Intermediate</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 60%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>&nbsp;</h3>
+                    <div class="section-title text-center col-sm-12">
+                        <h3>Professional Skills</h3>
+                    </div>         
+                    <div class="col-sm-12 col-md-6"> 
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">  
+                                <div class="each-skills">          
+                                    <div data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Communication</div>
+                                                    <div class="percentagem-num">80%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 80%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Team Work</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6"> 
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">  
+                                <div class="each-skills">          
+                                    <div data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Project Management</div>
+                                                    <div class="percentagem-num">85%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Creativity</div>
+                                                    <div class="percentagem-num">70%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 70%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>   
+        </section>
+        
+        <!--
+        ===================
+           EXPERIENCES
+        ===================
+        -->
+        
+        <section class="mh-experince" id="mh-experience">
+            <div class="bolor-overlay">
+                <div class="container">
+                    <div class="section-title text-center col-sm-12">
+                        <h3>Education</h3>
+                    </div>
+                    
+                            <div class="mh-work">
+                                
+                                <div class="mh-experience-deatils">
+                                    <!-- UG -->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                        <h4>B.E(CSE) From <a href="https://vce.ac.in" target="Blank">Vasavi College of Engineering</a></h4>
+                                        <div class="mh-eduyear">2022</div>
+                                        <p>CGPA: 9.17 </p>
+                                        <span>&nbsp;</span>
+                                    </div>                               
+                                    <!-- +2 -->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <h4>Intermediate Education(10+2) From <a href="#">Narayana Junior College</a></h4>
+                                        <div class="mh-eduyear">2018</div>
+                                        <p>Percentage: 98.1%</p> 
+                                    </div>                                
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                        <h4>Secondary Education(SSC) From <a href="#">Krishnaveni High School</a></h4>
+                                        <div class="mh-eduyear">2016</div>
+                                        <p>CGPA: 9.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                </div>
+            </div>
+        </section>
+       
+        <!--
+        ===================
+           Projects
+        ===================
+        -->
+        <section class="mh-blog" id="mh-projects">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h3>Projects</h3>
+                    </div>
+                    <!--POST 1-->
+                    <div class="col-sm-12 col-md-6">
+                         <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <img src="assets/images/tms.png" alt="" class="img-fluid" style="padding-left: 30mm;padding-right: 30mm;padding-top: 5mm;height: 95mm;width: 100%;">
+                            <div class="blog-inner">
+                                <h2><a href="" target="blank" title="View Blog">SATURN &nbsp;&nbsp;</a></h2>
+                                 
+                                <p>
+                                    SATURN is a beautifully designed, simple and compact package of a many-in-one kind.
+                                    It's features include Time Management, Scheduling, Weather Updates, Diary.
+
+                                </p>
+                                <!-- <a href="blog-single.html#mh-blog1" target="blank" title="Read More">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--POST 2-->
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                           <img src="assets/images/pass.png" alt="" class="img-fluid">
+                           <div class="blog-inner">
+                            <h2><a href=""  target="blank" title="View Blog">Intelligent Home Security System using 8051.</a></h2>
+                           
+                                <p>
+                                    Intelligent Home Security System using 8051 Microcontroller is a simple project where a secure password will act as a door locking system and if fire is detected by the sensor the output is show in the LCD and buzzer acts correspondingly.
+                                </p>
+                               <!-- <a href="blog-single.html#mh-blog2" target="blank" title="Read More">Read More</a> -->
+                           </div>
+                       </div>
+                    </div>
+                    <!--POST 3-->
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                           <img src="assets/images/daa.png" style="height: 80mm;width: 100%;" alt="" class="img-fluid">
+                           <div class="blog-inner">
+                               <h2><a href="" target="blank" title="View Blog">A Safer and Efficient Chat Box</a></h2>
+                               <p>In this project chat box is implemented using java. For this socket programming
+                                and Huffman algorithm to encode the message are used. To ensure safety and to
+                                increase usability Huffman algorithm is used</p>
+                               <!-- <a href="blog-single.html#mh-blog3" target="blank" title="Read More">Read More</a> -->
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <!--Blank-->
+                   <div class="col-sm-12 col-md-6" >
+                    <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                       <img src="assets/images/java.png" alt="" style="height: 80mm;width: 100%;"class="img-fluid">
+                       <div class="blog-inner">
+                           <h2><a href="" target="blank" title="View Blog">Button Game</a></h2>
+                           <p>This is a game developed using java swing framework. In this game, if a button is pressed, buttons around this button along with button itself disappear.
+                           
+                            If player left with no more buttons visible, he wins.
+                            </p>
+                           <!-- <a href="blog-single.html#mh-blog3" target="blank" title="Read More">Read More</a> -->
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </section>        
+        
+       
+       
+        
+       
+        <footer class="mh-footer" id="mh-contact">
+            <div class="map-image image-bg">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <h3>Contact Me</h3>
+                        </div>
+                        <div class="col-sm-12 mh-footer-address">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-location-arrow"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Address</h4>
+                                            <a href="https://goo.gl/maps/hgRdNLQmi3XXR3uo6" target="blank" title="Find me on Maps"><address>Chityal, Nalgonda dist, Telengana, India</address></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Email</h4>
+                                            <a href="mailto:tekulahemanth@gmail.com" title="Open Mail">tekulahemanth@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Phone</h4>
+                                            <a href="tel:+919381201545" title="Call me at ">+91 9381201545</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 xs-no-padding">
+                                    <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                       <li> Feel Free to Reach me at</li>
+                                        <!-- <li><a href="https://in.linkedin.com/in/kalitkar-Karthik-629308189" target="blank" title="Linkedin"><i class="fa fa-linkedin-square"> Linkedin</i></a></li> -->
+                                        <li><a href="https://github.com/Tekula-Hemanth-Reddy"><i class="fa fa-github" target="blank" title="GitHub"> GitHub</i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/karthikkalitkar23"><i class="fa fa-facebook" target="blank" title="Facebook"> facebook </i></a></li> -->
+                                        <li><a href="https://www.instagram.com/tekulahemanth/"><i class="fa fa-instagram" target="blank" title="Instagram"> Instagram</i></a></li>
+                                        <!-- <li><a href="#"><i class="fa fa-twitter"> twitter</i></a></li>-->
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>     
+    
+    <!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- jQuery -->
+    <script src="assets/plugins/js/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="assets/plugins/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/plugins/js/owl.carousel.js"></script>
+    <!-- validator -->
+    <script src="assets/plugins/js/validator.min.js"></script>
+    <!-- wow -->
+    <script src="assets/plugins/js/wow.min.js"></script>
+    <!-- mixin js-->
+    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
+    <!-- circle progress-->
+    <script src="assets/plugins/js/circle-progress.js"></script>
+    <!-- jquery nav -->
+    <script src="assets/plugins/js/jquery.nav.js"></script>
+    <!-- Fancybox js-->
+    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+    <!-- isotope js-->
+    <script src="assets/plugins/js/isotope.pkgd.js"></script>
+    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
+    <!-- Custom Scripts-->
+    <script src="assets/js/custom-scripts.js"></script>
+    
+    
+</body>
+
+</html>
